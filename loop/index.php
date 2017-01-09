@@ -13,5 +13,7 @@
 	<div><?php include '../loop/exercice3.php' ?></div>
 	<b>Exercice 4:</b>
 	<div><?php include '../loop/exercice4.php' ?></div>
+	<b>Exercice 5:</b>
+	<div><?php include '../loop/exercice5.php' ?></div>
 </body>
 </html>
