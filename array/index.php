@@ -1,6 +1,7 @@
 <?php
 	require __DIR__ . '/../array/exercice1.php';
 	require __DIR__ . '/../array/exercice4.php';
+	require __DIR__ . '/../array/exercice5.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,5 +19,7 @@
 	<div><?= $mois[5]; ?></div>
 	<b>Exercice 4:</b>
 	<div><?php print_r($mois4); ?></div>
+	<b>Exercice 5:</b>
+	<div><?php print_r($HautDeFrance); ?></div>
 </body>
 </html>
