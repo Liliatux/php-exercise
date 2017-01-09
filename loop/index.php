@@ -7,7 +7,9 @@
 <body>
 	<b>Exercice 1:</b>
 	<div><?php include '../loop/exercice1.php' ?></div>
-	<b>Exercice2:</b>
+	<b>Exercice 2:</b>
 	<div><?php include '../loop/exercice2.php' ?></div>
+	<b>Exercice 3:</b>
+	<div><?php include '../loop/exercice3.php' ?></div>
 </body>
 </html>
