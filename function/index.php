@@ -5,6 +5,7 @@
 	require __DIR__ . '/../function/exercice4.php';
 	require __DIR__ . '/../function/exercice5.php';
 	require __DIR__ . '/../function/exercice6.php';
+	require __DIR__ . '/../function/exercice7.php';
 ?>
 
 <!DOCTYPE html>
@@ -26,5 +27,7 @@
 	<div><?= exo5(); ?></div>
 	<b>Exercice 6:</b>
 	<div><?= exo6(); ?></div>
+	<b>Exercice 7:</b>
+	<div><?= exo7("femme", 20); ?></div>
 </body>
 </html>
