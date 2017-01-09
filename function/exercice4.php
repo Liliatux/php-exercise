@@ -1,5 +1,5 @@
 <?php 
-	function nombre ($a = 5, $b = 10) {
+	function exo4 ($a = 5, $b = 10) {
 		if($a > $b) {
 			return "Le premier nombre est plus grand";
 		} else if ($a < $b) {
@@ -8,6 +8,4 @@
 			return "Les deux nombres sont identiques.";
 		}
 	}
-
-	echo nombre();
 ?>

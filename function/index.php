@@ -1,3 +1,11 @@
+<?php 
+	require __DIR__ . '/../function/exercice1.php';
+	require __DIR__ . '/../function/exercice2.php';
+	require __DIR__ . '/../function/exercice3.php';
+	require __DIR__ . '/../function/exercice4.php';
+	require __DIR__ . '/../function/exercice5.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +14,14 @@
 </head>
 <body>
 	<b>Exercice 1:</b>
-	<div><?php include '../function/exercice1.php' ?></div>
+	<div><?= exo1(); ?></div>
 	<b>Exercice 2:</b>
-	<div><?php include '../function/exercice2.php' ?></div>
+	<div><?= exo2(); ?></div>
 	<b>Exercice 3:</b>
-	<div><?php include '../function/exercice3.php' ?></div>
+	<div><?= exo3(); ?></div>
 	<b>Exercice 4:</b>
-	<div><?php include '../function/exercice4.php' ?></div>
+	<div><?= exo4(); ?></div>
+	<b>Exercice 5:</b>
+	<div><?= exo5(); ?></div>
 </body>
 </html>
