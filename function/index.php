@@ -11,5 +11,7 @@
 	<div><?php include '../function/exercice2.php' ?></div>
 	<b>Exercice 3:</b>
 	<div><?php include '../function/exercice3.php' ?></div>
+	<b>Exercice 4:</b>
+	<div><?php include '../function/exercice4.php' ?></div>
 </body>
 </html>
