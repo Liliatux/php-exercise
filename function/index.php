@@ -9,5 +9,7 @@
 	<div><?php include '../function/exercice1.php' ?></div>
 	<b>Exercice 2:</b>
 	<div><?php include '../function/exercice2.php' ?></div>
+	<b>Exercice 3:</b>
+	<div><?php include '../function/exercice3.php' ?></div>
 </body>
 </html>
