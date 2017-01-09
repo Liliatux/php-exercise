@@ -21,5 +21,7 @@
 	<div><?php print_r($mois4); ?></div>
 	<b>Exercice 5:</b>
 	<div><?php print_r($HautDeFrance); ?></div>
+	<b>Exercice 6:</b>
+	<div><?= $HautDeFrance[59]; ?></div>
 </body>
 </html>
