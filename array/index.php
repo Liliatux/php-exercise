@@ -3,7 +3,6 @@
 	require __DIR__ . '/../array/exercice4.php';
 	require __DIR__ . '/../array/exercice5.php';
 	require __DIR__ . '/../array/exercice7.php';
-	require __DIR__ . '/../array/exercice8.php';
 ?>
 
 <!DOCTYPE html>
@@ -29,6 +28,8 @@
 	<div><?php print_r($HautDeFrance2); ?></div>
 	<b>Exercice 8:</b>
 	<div><?php include 'exercice8.php'; ?></div>
+	<b>Exercice 9:</b>
+	<div><?php include 'exercice9.php'; ?></div>
 
 </body>
 </html>
