@@ -1,2 +1,4 @@
-<span><?php echo $_GET['nom'];?></span>
-<span><?php echo $_GET['prenom']; ?></span>
+<?php 
+	$name = $_GET['nom'];
+	$firstName = $_GET['prenom']; 
+?>
