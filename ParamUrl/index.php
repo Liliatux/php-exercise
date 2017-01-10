@@ -23,5 +23,9 @@
 	<br>
 		<a href="exercice4.php?langage=PHP&serveur=LAMP">Liens 4</a>
 	</br>
+	<b>Exercice 5:</b>
+	<br>
+		<a href="exercice5.php?semaine=12">Liens 5</a>
+	</br>
 </body>
 </html>
