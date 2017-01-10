@@ -27,5 +27,9 @@
 	<br>
 		<a href="exercice5.php?semaine=12">Liens 5</a>
 	</br>
+	<b>Exercice 6:</b>
+	<br>
+		<a href="exercice6.php?batiment=12&salle=101">Liens 6</a>
+	</br>
 </body>
 </html>
