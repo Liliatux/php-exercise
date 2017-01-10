@@ -43,5 +43,28 @@
 
 		<input type="submit">
 	</form>
+
+	<b>Exercice 6:</b>
+	<div>
+		<?php if(empty($_GET)){ ?>
+			<form action="index.php" method="get">
+				<label for="civilite">Civilité</label>
+				<select name="civil" id="civilite">
+					<option value="1">Mme</option>
+					<option value="2">Mr</option>
+				</select>
+
+				<label for="name3">Nom</label>
+				<input type="text" name="name3" id="name3">
+
+				<label for="firstName3">Prénom</label>
+				<input type="text" name="firstName3" id="firstName3">
+
+				<input type="submit">
+			</form>
+		<?php } else {
+			echo $_GET['civil'].' '.$_GET['name3'].' '.$_GET['firstName3'];
+		} ?>
+	</div>
 </body>
 </html>
