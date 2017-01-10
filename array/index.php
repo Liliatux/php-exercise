@@ -30,6 +30,8 @@
 	<div><?php include 'exercice8.php'; ?></div>
 	<b>Exercice 9:</b>
 	<div><?php include 'exercice9.php'; ?></div>
+	<b>Exercice 10:</b>
+	<div><?php include 'exercice10.php'; ?></div>
 
 </body>
 </html>
