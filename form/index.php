@@ -8,10 +8,10 @@
 	<b>Exercice 1:</b>
 	<form action="user.php" method="get">
 		<label for="name">Nom</label>
-		<input type="text" name="name" id="name">
+		<input type="text" name="name" id="name" value="Tux">
 
 		<label for="firstName">Prénom</label>
-		<input type="text" name="firstName" id="firstName">
+		<input type="text" name="firstName" id="firstName" value="Lilia">
 
 		<input type="submit">
 	</form>	
