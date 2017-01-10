@@ -1,7 +1,3 @@
-<?php
-	require __DIR__ . '/../ParamUrl/exercice1.php'; 
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +6,13 @@
 </head>
 <body>
 	<b>Exercice 1:</b>
-	<a href="index.php?nom=Nemare&prenom=Jean">Liens</a>
-	<br><?= $name; ?></br>
-	<br><?= $firstName; ?></br>
+	<br>
+		<a href="exercice1.php?nom=Nemare&prenom=Jean">Liens</a>
+	</br>
+
+	<b>Exercice 2:</b>
+	<br>
+		<a href="exercice2.php?nom=Nemare&prenom=Jean">Liens</a>
+	</br>
 </body>
 </html>
