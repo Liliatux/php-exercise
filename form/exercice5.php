@@ -6,7 +6,7 @@
 </head>
 <body>
 	<b>Exercice 5:</b>
-	<form action="index.php" method="get">
+	<form action="exercice5.php" method="get">
 		<label for="civilite">Civilité</label>
 		<select name="civil" id="civilite">
 			<option value="1">Mme</option>

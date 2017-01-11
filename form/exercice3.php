@@ -6,7 +6,7 @@
 </head>
 <body>
 	<b>Exercice 3:</b>
-	<form action="user.php" method="get">
+	<form action="exercice3.php" method="get">
 		<label for="name">Nom</label>
 		<input type="text" name="name" id="name" value="Tux">
 

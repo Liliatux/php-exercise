@@ -8,7 +8,7 @@
 	<b>Exercice 7:</b>
 	<div>
 		<?php if(empty($_POST)){ ?>
-			<form action="index.php" method="post">
+			<form action="exercice7.php" method="post">
 				<label for="civilite">Civilité</label>
 				<select name="civil" id="civilite">
 					<option value="1">Mme</option>

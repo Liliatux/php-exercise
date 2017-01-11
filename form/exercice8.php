@@ -12,7 +12,7 @@
 		$extensionPost = strrchr($_FILES['file']['name'], '.');
 
 		if(empty($_POST) || $extension !== $extensionPost){ ?>
-			<form action="index.php" method="post" enctype="multipart/form-data">
+			<form action="exercice8.php" method="post" enctype="multipart/form-data">
 				<label for="civilite">Civilité</label>
 				<select name="civil" id="civilite">
 					<option value="1">Mme</option>
