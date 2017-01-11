@@ -6,7 +6,7 @@
 </head>
 <body>
 	<?php 
-		echo date('d-m-Y', strtotime('11-01-2017 -20 days'));	 
+		echo date('d-m-Y', strtotime('11-01-2017 -22 days'));	 
 	?>
 </body>
 </html>
