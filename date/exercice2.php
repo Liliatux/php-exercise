@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Exo1</title>
+	<title>Exo2</title>
 </head>
 <body>
 	<?php echo date("j-m-y"); ?>
