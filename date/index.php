@@ -1,6 +1,6 @@
 <?php 
-	$month = array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
-	$day = array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
+	$month = array("", "Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
+	$day = array("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche");
 ?>
 
 <!DOCTYPE html>
@@ -11,13 +11,12 @@
 </head>
 <body>
 	<h1>Calendrier</h1>
-	<?php echo $month[""]; ?>
 	<form action="index.php" method="post">
 		<label for="month">Mois</label>
 		<select name="month" id="month">
 			<?php 
-				foreach ($month as $value) {
-					echo "<option value='$value'>$value</option>";
+				foreach ($month as $key => $value) {
+					echo "<option value='$key'>$value</option>";
 				}
 			?>
 		</select>
@@ -32,7 +31,7 @@
 		<input type="submit">
 	</form>
 	<div class="choice">
-		<?php echo $_POST['month'].' '.$_POST['year'] ?>
+		<?php echo $_POST['month']." ".$_POST['year']; ?>
 	</div>
 	<table>
 		<thead>
@@ -43,10 +42,41 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<?php foreach ($day as $key => $value): ?>
-						<td><?php echo $key; ?></td>
-				<?php endforeach; ?>				
+			<?php 
+				$dayInMonth = cal_days_in_month(CAL_GREGORIAN, $_POST['month'], $_POST['year']);
+
+				for ($i = 1; $i <= $dayInMonth; $i++) {
+					$week = cal_to_jd(CAL_GREGORIAN, $_POST['month'], $i, $_POST['year']);
+					$dayWeek = JDDayOfWeek($week); 
+
+					//Quand le mois commence ouvrir une ligne
+					if ($i === 1) {
+						//Changer le 0 de dimanche en 7
+						if ($dayWeek === 0) {
+							$dayWeek = 7;
+						}
+
+						//Pour les jours qui ne sont pas présents faire des td vides
+						for ($k = 1; $k != $dayWeek; $k++){
+							echo "<td></td>";
+						}
+						
+						//Jour des semaines en colone
+						echo "<td>$i</td>";
+					}
+					//Pour la suite du mois
+					else {
+						//Ouvrir une ligne au début de semaine
+						if ($dayWeek === 1) {
+							echo "<tr>";
+						}
+
+						//Jour des semaines en colone
+						echo "<td>$i</td>";
+					}
+
+				}
+			?>
 			</tr>
 		</tbody>
 	</table>
